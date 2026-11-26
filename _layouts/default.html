@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .docs-nav{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 28px;padding:0 0 16px;border-bottom:1px solid var(--line);font-size:15px}
+  .docs-nav a{color:var(--muted);text-decoration:none}.docs-nav a:hover{color:var(--text)}
+  main h1{margin-top:0}
+  main table{display:block;overflow-x:auto}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/logo.webp" alt="" width="30" height="30">EEATClean</a>
+    <nav aria-label="Main">
+      <a href="{{ '/' | relative_url }}">Docs</a>
+      <a href="/outdated-content-finder/">Free tool</a>
+      <a href="https://eeatclean.com/">eeatclean.com</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <nav class="docs-nav" aria-label="Documentation">
+      <a href="{{ '/getting-started.html' | relative_url }}">Getting started</a>
+      <a href="{{ '/connect-your-website.html' | relative_url }}">Connect your website</a>
+      <a href="{{ '/how-an-analysis-works.html' | relative_url }}">How an analysis works</a>
+      <a href="{{ '/verdicts-and-corrections.html' | relative_url }}">Verdicts</a>
+      <a href="{{ '/sources.html' | relative_url }}">Sources</a>
+      <a href="{{ '/monitoring.html' | relative_url }}">Monitoring</a>
+      <a href="{{ '/plans-and-billing.html' | relative_url }}">Plans</a>
+      <a href="{{ '/faq.html' | relative_url }}">FAQ</a>
+    </nav>
+    {{ content }}
+  </div>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <p>EEATClean is a product of FunInformatique OÜ, Estonia. Questions? Email <a href="mailto:support@eeatclean.com">support@eeatclean.com</a>.</p>
+    <p>These docs are open source: <a href="https://github.com/eeatclean/docs">suggest a change on GitHub</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

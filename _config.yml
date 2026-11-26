@@ -1,0 +1,16 @@
+title: EEATClean docs
+description: How EEATClean finds outdated and inaccurate facts in your articles, and proves each correction with a source.
+url: https://eeatclean.github.io
+baseurl: /docs
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: false
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+exclude: [LICENSE]
